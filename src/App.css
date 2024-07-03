@@ -1,20 +1,37 @@
 .App {
   text-align: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(255, 255, 255);
+  color: whitesmoke;
 }
 
 .App-header {
-  background-color: rgb(58, 58, 58);
+  background-color: rgb(13, 13, 14);
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: whitesmoke;
 }
 
 body {
-  background-color: rgb(13, 13, 14);
+  background-color: rgb(28, 25, 25);
+}
+
+.slider {
+  justify-content: center;
+  text-align: center;
+}
+
+.submitButton {
+  width: 150px;
+  height: 35px;
+  background-color: grey;
+  border: none;
+  border-radius: 20px;
+}
+
+.submitButton:hover {
+  background-color: rgb(95, 95, 95);
 }
