@@ -25,6 +25,8 @@ body {
 }
 
 .submitButton {
+  margin-top: 75px;
+  margin-bottom: 100px;
   width: 150px;
   height: 35px;
   background-color: grey;
@@ -34,4 +36,8 @@ body {
 
 .submitButton:hover {
   background-color: rgb(95, 95, 95);
+}
+
+.openingParagraph {
+  margin-bottom: 200px;
 }
