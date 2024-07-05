@@ -20,18 +20,27 @@ body {
 }
 
 .slider {
+  background-color: rgb(17, 15, 15);
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1px;
   justify-content: center;
   text-align: center;
+  width: 700px;
+  height: 200px;
+  position: relative;
+  margin-bottom: 70px;
 }
 
 .submitButton {
-  margin-top: 75px;
-  margin-bottom: 100px;
-  width: 150px;
-  height: 35px;
+  margin: 20px;
+  width: 250px;
+  height: 50px;
   background-color: grey;
   border: none;
-  border-radius: 20px;
+  border-radius: 50px;
+  font-size: calc(5px + 2vmin);
 }
 
 .submitButton:hover {
@@ -40,4 +49,23 @@ body {
 
 .openingParagraph {
   margin-bottom: 200px;
+}
+
+.agree {
+  margin-top: 35px;
+  position: absolute;
+  right: 5%;
+}
+
+.neutral {
+  margin-top: 35px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.disagree {
+  margin-top: 35px;
+  position: absolute;
+  left: 5%;
 }
