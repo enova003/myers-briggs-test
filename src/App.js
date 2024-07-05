@@ -1,13 +1,13 @@
 import './App.css';
 import React, { useState } from 'react';
 import Slider from '@mui/material/Slider';
-import { getValue, textAlign } from '@mui/system';
 
 function App() {
-  const [sliderValues, setSliderValues] = useState([0, 0]);
+  const [clickOnce, setClickOnce] = useState(true);
+  const [sliderChange, setSliderChange] = useState([0, 0]);
 
-  const [introvert, setIntrovert] = useState(0);
-  const [extrovert, setExtrovert] = useState(0);
+  const [introvert, setIntrovert] = useState([0, 0]);
+  const [extrovert, setExtrovert] = useState([0, 0]);
   const [sensing, setSensing] = useState(0);
   const [inutition, setIntuition] = useState(0);
   const [thinking, setThinking] = useState(0);
@@ -18,23 +18,32 @@ function App() {
   const [assertive, setAssertive] = useState(0);
 
   function seePersonality() {
-    alert("introvert " + introvert);
-    alert("extrovert " + extrovert);
-  }
+    const sumIntrovert = -(introvert.reduce((acc, curr) => acc + curr, 0));
+    const sumExtrovert = extrovert.reduce((acc, curr) => acc + curr, 0);
 
-  const updateIntrovertExtrovert = (index, newValue) => {
-    const newSliderValues = [...sliderValues];
-    newSliderValues[index] = newValue;
-    setSliderValues(newSliderValues);
+    setClickOnce(false);
 
-    const sliderSum = newSliderValues.reduce((acc, val) => acc + val, 0);
-
-    if (newValue > 0) {
-      setExtrovert(sliderSum);
-    } else if (newValue < 0) {
-      setIntrovert(-sliderSum);
+    if(clickOnce){
+      alert("introvert " + sumIntrovert);
+      alert("extrovert " + sumExtrovert);
     }
-  }
+  };
+
+  const setIntrovertorExtrovert = (index, value) => {
+    let newSliderChange = [...sliderChange];
+    newSliderChange[index] = value;
+    setSliderChange(newSliderChange);
+
+    if (value > 0) {
+      let newExtrovertArr = [...extrovert]
+      newExtrovertArr[index] = value;
+      setExtrovert(newExtrovertArr);
+    } else if (value < 0) {
+      let newIntrovertArr = [...introvert]
+      newIntrovertArr[index] = value;
+      setIntrovert(newIntrovertArr);
+    }
+  };
 
   return (
     <div className="App">
@@ -67,8 +76,8 @@ function App() {
             defaultValue={0}
             step={10}
             color="secondary"
-            value={sliderValues[0]}
-            onChange={(event, newValue) => updateIntrovertExtrovert(0, newValue)}
+            value={sliderChange[0]}
+            onChange={(event, value) => setIntrovertorExtrovert(0, value)}
           />
         </div>
 
@@ -81,8 +90,8 @@ function App() {
             defaultValue={0}
             step={10}
             color="secondary"
-            value={sliderValues[1]}
-            onChange={(event, newValue) => updateIntrovertExtrovert(1, newValue)}
+            value={sliderChange[1]}
+            onChange={(event, value) => setIntrovertorExtrovert(1, value)}
           />
         </div>
 
