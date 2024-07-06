@@ -4,20 +4,24 @@ import Slider from '@mui/material/Slider';
 
 function App() {
   const [clickOnce, setClickOnce] = useState(true);
-  const [sliderChange, setSliderChange] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [introvert, setIntrovert] = useState([0, 0, 0, 0]);
-  const [extrovert, setExtrovert] = useState([0, 0, 0, 0]);
+  const [tempIntrovertExtrovert, settempIntrovertExtrovert] = useState([0, 0, 0, 0, 0]);
+  const [introvert, setIntrovert] = useState([0, 0, 0, 0, 0]);
+  const [extrovert, setExtrovert] = useState([0, 0, 0, 0, 0]);
 
-  const [sensing, setSensing]     = useState([0, 0, 0, 0]);
-  const [inutition, setIntuition] = useState([0, 0, 0, 0]);
+  const [tempSensingIntuition, settempSensingIntuition] = useState([0, 0, 0, 0, 0]);
+  const [sensing, setSensing]     = useState([0, 0, 0, 0, 0]);
+  const [inutition, setIntuition] = useState([0, 0, 0, 0, 0]);
 
-  const [thinking, setThinking] = useState([0, 0, 0, 0]);
-  const [feeling, setFeeling]   = useState([0, 0, 0, 0]);
+  const [tempThinkingFeeling, setTempThinkingFeeling] = useState([0, 0, 0, 0, 0]);
+  const [thinking, setThinking] = useState([0, 0, 0, 0, 0]);
+  const [feeling, setFeeling]   = useState([0, 0, 0, 0, 0]);
 
+  const [tempJudgingPerceiving, settempJudgingPerceiving] = useState([0, 0, 0, 0]);
   const [judging, setJudging]       = useState([0, 0, 0, 0]);
   const [perceiving, setPerceiving] = useState([0, 0, 0, 0]);
 
+  const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0]);
   const [turbulent, setTurbulent] = useState([0, 0, 0, 0]);
   const [assertive, setAssertive] = useState([0, 0, 0, 0]);
 
@@ -42,9 +46,9 @@ function App() {
   };
 
   const setIntrovertOrExtrovert = (index, value) => {
-    let newSliderChange = [...sliderChange];
-    newSliderChange[index] = value;
-    setSliderChange(newSliderChange);
+    let newtempIntrovertExtrovert = [...tempIntrovertExtrovert];
+    newtempIntrovertExtrovert[index] = value;
+    settempIntrovertExtrovert(newtempIntrovertExtrovert);
 
     if (value > 0) {
       let newExtrovertArr = [...extrovert]
@@ -58,9 +62,9 @@ function App() {
   };
 
   const setSensingOrIntuition = (index, value) => {
-    let newSliderChange = [...sliderChange];
-    newSliderChange[index] = value;
-    setSliderChange(newSliderChange);
+    let newtempSensingIntuition = [...tempSensingIntuition];
+    newtempSensingIntuition[index] = value;
+    settempSensingIntuition(newtempSensingIntuition);
 
     if (value > 0) {
       let newInutitionArr = [...inutition];
@@ -74,9 +78,9 @@ function App() {
   };
 
   const setThinkingOrFeeling = (index, value) => {
-    let newSliderChange = [...sliderChange];
-    newSliderChange[index] = value;
-    setSliderChange(newSliderChange);
+    let newtempThinkingFeeling = [...tempThinkingFeeling];
+    newtempThinkingFeeling[index] = value;
+    setTempThinkingFeeling(newtempThinkingFeeling);
 
     if (value > 0) {
       let newFeelingArr = [...feeling];
@@ -90,9 +94,9 @@ function App() {
   };
 
   const setJudgingOrPerceiving = (index, value) => {
-    let newSliderChange = [...sliderChange];
-    newSliderChange[index] = value;
-    setSliderChange(newSliderChange);
+    let newtempJudgingPerceiving = [...tempJudgingPerceiving];
+    newtempJudgingPerceiving[index] = value;
+    settempJudgingPerceiving(newtempJudgingPerceiving);
 
     if (value > 0) {
       let newJudgingArr = [...judging];
@@ -106,9 +110,9 @@ function App() {
   };
 
   const setAssertiveOrTurbulent = (index, value) => {
-    let newSliderChange = [...sliderChange];
-    newSliderChange[index] = value;
-    setSliderChange(newSliderChange);
+    let newtempTurbulentAssertive = [...tempTurbulentAssertive];
+    newtempTurbulentAssertive[index] = value;
+    settempTurbulentAssertive(newtempTurbulentAssertive);
 
     if (value > 0) {
       let newAssertiveArr = [...assertive];
@@ -137,7 +141,7 @@ function App() {
             <br />
             Scroll down to get started!<br />
           </p>
-          <p>________________________________________________________________________</p>
+          <p>___________________________________________________________________</p>
         </div>
 
         <div className="slider">
@@ -150,7 +154,7 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[0]}
+            value={tempIntrovertExtrovert[0]}
             onChange={(event, value) => setIntrovertOrExtrovert(0, value)}
           />
           <span className='agree'>Agree</span>
@@ -168,8 +172,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[1]}
-            onChange={(event, value) => setSensingOrIntuition(1, value)}
+            value={tempSensingIntuition[0]}
+            onChange={(event, value) => setSensingOrIntuition(0, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -186,8 +190,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[2]}
-            onChange={(event, value) => setThinkingOrFeeling(2, value)}
+            value={tempThinkingFeeling[0]}
+            onChange={(event, value) => setThinkingOrFeeling(0, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -204,8 +208,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[3]}
-            onChange={(event, value) => setJudgingOrPerceiving(3, value)}
+            value={tempJudgingPerceiving[0]}
+            onChange={(event, value) => setJudgingOrPerceiving(0, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -222,8 +226,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[4]}
-            onChange={(event, value) => setAssertiveOrTurbulent(4, value)}
+            value={tempTurbulentAssertive[0]}
+            onChange={(event, value) => setAssertiveOrTurbulent(0, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -240,8 +244,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[5]}
-            onChange={(event, value) => setIntrovertOrExtrovert(5, value)}
+            value={tempIntrovertExtrovert[1]}
+            onChange={(event, value) => setIntrovertOrExtrovert(1, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -258,8 +262,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[6]}
-            onChange={(event, value) => setJudgingOrPerceiving(6, value)}
+            value={tempJudgingPerceiving[1]}
+            onChange={(event, value) => setJudgingOrPerceiving(1, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -276,8 +280,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[7]}
-            onChange={(event, value) => setThinkingOrFeeling(7, value)}
+            value={tempThinkingFeeling[1]}
+            onChange={(event, value) => setThinkingOrFeeling(1, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -294,8 +298,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[8]}
-            onChange={(event, value) => setJudgingOrPerceiving(8, value)}
+            value={tempJudgingPerceiving[2]}
+            onChange={(event, value) => setJudgingOrPerceiving(2, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -312,8 +316,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[9]}
-            onChange={(event, value) => setAssertiveOrTurbulent(9, value)}
+            value={tempTurbulentAssertive[1]}
+            onChange={(event, value) => setAssertiveOrTurbulent(1, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -330,8 +334,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[10]}
-            onChange={(event, value) => setIntrovertOrExtrovert(10, value)}
+            value={tempIntrovertExtrovert[2]}
+            onChange={(event, value) => setIntrovertOrExtrovert(2, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -348,8 +352,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[11]}
-            onChange={(event, value) => setSensingOrIntuition(11, value)}
+            value={tempSensingIntuition[1]}
+            onChange={(event, value) => setSensingOrIntuition(1, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -366,8 +370,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[12]}
-            onChange={(event, value) => setThinkingOrFeeling(12, value)}
+            value={tempThinkingFeeling[2]}
+            onChange={(event, value) => setThinkingOrFeeling(2, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -384,8 +388,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[13]}
-            onChange={(event, value) => setJudgingOrPerceiving(13, value)}
+            value={tempJudgingPerceiving[3]}
+            onChange={(event, value) => setJudgingOrPerceiving(3, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -402,8 +406,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[14]}
-            onChange={(event, value) => setAssertiveOrTurbulent(14, value)}
+            value={tempTurbulentAssertive[2]}
+            onChange={(event, value) => setAssertiveOrTurbulent(2, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -420,8 +424,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[15]}
-            onChange={(event, value) => setIntrovertOrExtrovert(15, value)}
+            value={tempIntrovertExtrovert[3]}
+            onChange={(event, value) => setIntrovertOrExtrovert(3, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -438,8 +442,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[16]}
-            onChange={(event, value) => setSensingOrIntuition(16, value)}
+            value={tempSensingIntuition[2]}
+            onChange={(event, value) => setSensingOrIntuition(2, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -456,8 +460,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[17]}
-            onChange={(event, value) => setThinkingOrFeeling(17, value)}
+            value={tempThinkingFeeling[3]}
+            onChange={(event, value) => setThinkingOrFeeling(3, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -474,8 +478,8 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[18]}
-            onChange={(event, value) => setSensingOrIntuition(18, value)}
+            value={tempSensingIntuition[3]}
+            onChange={(event, value) => setSensingOrIntuition(3, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
@@ -492,8 +496,62 @@ function App() {
             step={1}
             color="secondary"
             marks
-            value={sliderChange[19]}
-            onChange={(event, value) => setAssertiveOrTurbulent(19, value)}
+            value={tempTurbulentAssertive[3]}
+            onChange={(event, value) => setAssertiveOrTurbulent(3, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You enjoy participating in team-based activities.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempIntrovertExtrovert[4]}
+            onChange={(event, value) => setIntrovertOrExtrovert(4, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You enjoy experimenting with new and untested approaches.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempSensingIntuition[4]}
+            onChange={(event, value) => setSensingOrIntuition(4, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You prioritize being sensitive over being completely honest.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempThinkingFeeling[4]}
+            onChange={(event, value) => setThinkingOrFeeling(4, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
