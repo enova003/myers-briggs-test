@@ -9,21 +9,21 @@ function App() {
   const [introvert, setIntrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
   const [extrovert, setExtrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempSensingIntuition, settempSensingIntuition]     = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [sensing, setSensing]                               = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [inutition, setIntuition]                           = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [tempSensingIntuition, settempSensingIntuition]     = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [sensing, setSensing]                               = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [inutition, setIntuition]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
   const [tempThinkingFeeling, setTempThinkingFeeling]       = useState([0, 0, 0, 0, 0, 0, 0, 0]);
   const [thinking, setThinking]                             = useState([0, 0, 0, 0, 0, 0, 0, 0]);
   const [feeling, setFeeling]                               = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempJudgingPerceiving, settempJudgingPerceiving]   = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [judging, setJudging]                               = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [perceiving, setPerceiving]                         = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [tempJudgingPerceiving, settempJudgingPerceiving]   = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [judging, setJudging]                               = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [perceiving, setPerceiving]                         = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [turbulent, setTurbulent]                           = useState([0, 0, 0, 0, 0, 0, 0]);
-  const [assertive, setAssertive]                           = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [turbulent, setTurbulent]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [assertive, setAssertive]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
   function seePersonality() {
     const sumIntrovert = -(introvert.reduce((acc, curr) => acc + curr, 0));
@@ -559,7 +559,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You often come up with creative solutions to solve problems that others might not think of.</p> 
+        <p>You often come up with creative ways to problem solve or accomplish tasks.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -804,6 +804,60 @@ function App() {
             marks
             value={tempTurbulentAssertive[6]}
             onChange={(event, value) => setAssertiveOrTurbulent(6, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>Freedom is more important than order.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempSensingIntuition[7]}
+            onChange={(event, value) => setSensingOrIntuition(7, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You often think about how your life will be when you are old.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempJudgingPerceiving[7]}
+            onChange={(event, value) => setJudgingOrPerceiving(7, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You don't often need reassurance from others when making decisions.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempTurbulentAssertive[7]}
+            onChange={(event, value) => setAssertiveOrTurbulent(7, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
