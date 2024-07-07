@@ -5,25 +5,25 @@ import Slider from '@mui/material/Slider';
 function App() {
   const [clickOnce, setClickOnce] = useState(true);
 
-  const [tempIntrovertExtrovert, settempIntrovertExtrovert] = useState([0, 0, 0, 0, 0]);
-  const [introvert, setIntrovert] = useState([0, 0, 0, 0, 0]);
-  const [extrovert, setExtrovert] = useState([0, 0, 0, 0, 0]);
+  const [tempIntrovertExtrovert, settempIntrovertExtrovert] = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [introvert, setIntrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [extrovert, setExtrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempSensingIntuition, settempSensingIntuition] = useState([0, 0, 0, 0, 0]);
-  const [sensing, setSensing]     = useState([0, 0, 0, 0, 0]);
-  const [inutition, setIntuition] = useState([0, 0, 0, 0, 0]);
+  const [tempSensingIntuition, settempSensingIntuition]     = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [sensing, setSensing]                               = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [inutition, setIntuition]                           = useState([0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempThinkingFeeling, setTempThinkingFeeling] = useState([0, 0, 0, 0, 0]);
-  const [thinking, setThinking] = useState([0, 0, 0, 0, 0]);
-  const [feeling, setFeeling]   = useState([0, 0, 0, 0, 0]);
+  const [tempThinkingFeeling, setTempThinkingFeeling]       = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [thinking, setThinking]                             = useState([0, 0, 0, 0, 0, 0, 0, 0]);
+  const [feeling, setFeeling]                               = useState([0, 0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempJudgingPerceiving, settempJudgingPerceiving] = useState([0, 0, 0, 0]);
-  const [judging, setJudging]       = useState([0, 0, 0, 0]);
-  const [perceiving, setPerceiving] = useState([0, 0, 0, 0]);
+  const [tempJudgingPerceiving, settempJudgingPerceiving]   = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [judging, setJudging]                               = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [perceiving, setPerceiving]                         = useState([0, 0, 0, 0, 0, 0, 0]);
 
-  const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0]);
-  const [turbulent, setTurbulent] = useState([0, 0, 0, 0]);
-  const [assertive, setAssertive] = useState([0, 0, 0, 0]);
+  const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [turbulent, setTurbulent]                           = useState([0, 0, 0, 0, 0, 0, 0]);
+  const [assertive, setAssertive]                           = useState([0, 0, 0, 0, 0, 0, 0]);
 
   function seePersonality() {
     const sumIntrovert = -(introvert.reduce((acc, curr) => acc + curr, 0));
@@ -163,7 +163,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>Complex and novel ideas excite you more than simple and straightforward ones.</p>
+        <p>Complex ideas excite you more than simple and straightforward ones.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -307,7 +307,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You rarely doubt your overall abilities or knowledge when you make a mistake.</p>
+        <p>You rarely doubt your abilities or knowledge, even when you make a mistake.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -415,7 +415,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy participating in team-based activities.</p>
+        <p>You enjoy participating in team-based activities.</p>  
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -433,7 +433,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy experimenting with new and untested approaches.</p>
+        <p>You enjoy debating ethical dilemmas.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -469,7 +469,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You actively seek out new experiences and knowledge areas to explore.</p>
+        <p>You actively seek out new knowledge areas to explore.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -505,7 +505,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy participating in team-based activities.</p>
+        <p>You would rather go to a lively event on a Friday night than stay at home.</p>  
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -523,7 +523,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy experimenting with new and untested approaches.</p>
+        <p>You tend to see patterns and connections between seemingly unrelated things.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -541,7 +541,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prioritize being sensitive over being completely honest.</p>
+        <p>You have a difficult time forgiving people.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -552,6 +552,258 @@ function App() {
             marks
             value={tempThinkingFeeling[4]}
             onChange={(event, value) => setThinkingOrFeeling(4, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You often come up with creative solutions to solve problems that others might not think of.</p> 
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempSensingIntuition[5]}
+            onChange={(event, value) => setSensingOrIntuition(5, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You don't often worry or stress out about the little things.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempTurbulentAssertive[4]}
+            onChange={(event, value) => setAssertiveOrTurbulent(4, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You enjoy solitary hobbies or activities more than group ones.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempIntrovertExtrovert[5]}
+            onChange={(event, value) => setIntrovertOrExtrovert(5, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You find fictional stories more interesting than non-fictional stories.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempThinkingFeeling[5]}
+            onChange={(event, value) => setThinkingOrFeeling(5, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You prefer to work with people who share your values and perspectives rather than those who challenge your views.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempThinkingFeeling[6]}
+            onChange={(event, value) => setThinkingOrFeeling(6, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You prefer to do your chores before allowing yourself to relax.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempJudgingPerceiving[4]}
+            onChange={(event, value) => setJudgingOrPerceiving(4, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>In disagreements, you prioritize preserving the feelings of others over proving your point.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempThinkingFeeling[7]}
+            onChange={(event, value) => setThinkingOrFeeling(7, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You enjoy introducing yourself to new people at social gatherings.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempIntrovertExtrovert[6]}
+            onChange={(event, value) => setIntrovertOrExtrovert(6, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You are more likely to prioritize your own well-being and happiness over pleasing others.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempTurbulentAssertive[5]}
+            onChange={(event, value) => setAssertiveOrTurbulent(5, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You don't usually procrastinate or postpone things.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempJudgingPerceiving[5]}
+            onChange={(event, value) => setJudgingOrPerceiving(5, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You usually prefer to be around others rather than on your own.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempIntrovertExtrovert[7]}
+            onChange={(event, value) => setIntrovertOrExtrovert(7, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You enjoy discussing theories.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempSensingIntuition[6]}
+            onChange={(event, value) => setSensingOrIntuition(6, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>Getting an 'A' in a class is really important to you.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempJudgingPerceiving[6]}
+            onChange={(event, value) => setJudgingOrPerceiving(6, value)}
+          />
+          <span className='agree'>Agree</span>
+          <span className='neutral'>Neutral</span>
+          <span className='disagree'>Disagree</span>
+        </div>
+
+        <div className="slider">
+        <p>You rarely second-guess the choices that you have made.</p>
+          <Slider 
+            sx={{ width: 550 }}
+            min={-10}
+            max={10}
+            defaultValue={0}
+            step={1}
+            color="secondary"
+            marks
+            value={tempTurbulentAssertive[6]}
+            onChange={(event, value) => setAssertiveOrTurbulent(6, value)}
           />
           <span className='agree'>Agree</span>
           <span className='neutral'>Neutral</span>
