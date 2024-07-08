@@ -8,7 +8,8 @@ function App() {
   //                      **Variable Section**
   //--------------------------------------------------------------------
 
-  const [clickOnce, setClickOnce] = useState(true);
+  const [notClicked, setNotClicked] = useState(true);
+  const [personalityResults, setPersonalityResults] = useState('');
 
   const [tempIntrovertExtrovert, settempIntrovertExtrovert] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]); 
   const [introvert, setIntrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
@@ -35,23 +36,56 @@ function App() {
   //--------------------------------------------------------------------
 
   function seePersonality() {
-    const sumIntrovert = -(introvert.reduce((acc, curr) => acc + curr, 0));
-    const sumExtrovert = extrovert.reduce((acc, curr) => acc + curr, 0);
-    const sumSensing = -(sensing.reduce((acc, curr) => acc + curr, 0));
-    const sumIntuition = inutition.reduce((acc, curr) => acc + curr, 0);
-    const sumThinking = -(thinking.reduce((acc, curr) => acc + curr, 0));
-    const sumFeeling = feeling.reduce((acc, curr) => acc + curr, 0);
-    const sumJudging = judging.reduce((acc, curr) => acc + curr, 0);
-    const sumPerceiving = -(perceiving.reduce((acc, curr) => acc + curr, 0));
-    const sumTurbulent = -(turbulent.reduce((acc, curr) => acc + curr, 0));
-    const sumAssertive = assertive.reduce((acc, curr) => acc + curr, 0);
+    let personalityTraits = "";
 
-    setClickOnce(false);
+    if(notClicked){
+      const sumIntrovert = -(introvert.reduce((acc, curr) => acc + curr, 0));
+      const sumExtrovert = extrovert.reduce((acc, curr) => acc + curr, 0);
+      const sumSensing = -(sensing.reduce((acc, curr) => acc + curr, 0));
+      const sumIntuition = inutition.reduce((acc, curr) => acc + curr, 0);
+      const sumThinking = -(thinking.reduce((acc, curr) => acc + curr, 0));
+      const sumFeeling = feeling.reduce((acc, curr) => acc + curr, 0);
+      const sumJudging = judging.reduce((acc, curr) => acc + curr, 0);
+      const sumPerceiving = -(perceiving.reduce((acc, curr) => acc + curr, 0));
+      const sumTurbulent = -(turbulent.reduce((acc, curr) => acc + curr, 0));
+      const sumAssertive = assertive.reduce((acc, curr) => acc + curr, 0);
 
-    if(clickOnce){
-      alert("introvert " + sumIntrovert);
-      alert("extrovert " + sumExtrovert);
+      if(sumIntrovert > sumExtrovert){
+        personalityTraits += "I";
+      } else if(sumExtrovert > sumIntrovert){
+        personalityTraits += "E";
+      }
+
+      if(sumSensing > sumIntuition){
+        personalityTraits += "S";
+      } else if(sumIntuition > sumSensing){
+        personalityTraits += "N";
+      }
+
+      if(sumThinking > sumFeeling){
+        personalityTraits += "T";
+      } else if(sumFeeling > sumThinking){
+        personalityTraits += "F";
+      }
+
+      if(sumJudging > sumPerceiving){
+        personalityTraits += "J";
+      } else if(sumPerceiving > sumJudging){
+        personalityTraits += "P";
+      }
+
+      personalityTraits += "-";
+
+      if(sumTurbulent > sumAssertive){
+        personalityTraits += "T";
+      } else if(sumAssertive > sumTurbulent){
+        personalityTraits += "A";
+      }
+
+      setPersonalityResults(personalityTraits);
     }
+
+    setNotClicked(false);
   };
 
   const setIntrovertOrExtrovert = (index, value) => {
@@ -554,7 +588,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You have a difficult time forgiving people.</p> 
+        <p>You sometimes hold grudges and have a difficult time forgiving people.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1330,6 +1364,14 @@ function App() {
         <div>
           <button className="submitButton" onClick={seePersonality}>See my results</button>
         </div>
+
+        {!notClicked ? (
+          <div>
+            <p>
+              You are <br /> {personalityResults}
+            </p>
+          </div>
+        ) : null }
 
       </main>
     </div>
