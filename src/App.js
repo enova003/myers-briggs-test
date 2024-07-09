@@ -14,26 +14,41 @@ function App() {
   const [tempIntrovertExtrovert, settempIntrovertExtrovert] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]); 
   const [introvert, setIntrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [extrovert, setExtrovert]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [introvertPercentage, setIntrovertPercentage]       = useState(0);
+  const [extrovertPercentage, setExtrovertPercentage]       = useState(0);
 
   const [tempSensingIntuition, settempSensingIntuition]     = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [sensing, setSensing]                               = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [inutition, setIntuition]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [sensingPercentage, setSensingPercentage]           = useState(0);
+  const [intuitionPercentage, setIntuitionPercentage]       = useState(0);
 
   const [tempThinkingFeeling, setTempThinkingFeeling]       = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]); 
   const [thinking, setThinking]                             = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [feeling, setFeeling]                               = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [thinkingPercentage, setThinkingPercentage]         = useState(0);
+  const [feelingPercentage, setFeelingPercentage]           = useState(0);
 
   const [tempJudgingPerceiving, settempJudgingPerceiving]   = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [judging, setJudging]                               = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [perceiving, setPerceiving]                         = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [judgingPercentage, setJudgingPercentage]           = useState(0);
+  const [perceivingPercentage, setPerceivingPercentage]     = useState(0);
 
   const [tempTurbulentAssertive, settempTurbulentAssertive] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [turbulent, setTurbulent]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
   const [assertive, setAssertive]                           = useState([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+  const [turbulentPercentage, setTurbulentPercentage]       = useState(0);
+  const [assertivePercentage, setAssertivePercentage]       = useState(0); 
 
   //--------------------------------------------------------------------
   //                      **Function Section**
   //--------------------------------------------------------------------
+
+  const handleClick = () => {
+    seePersonality();
+    calculatePercentages();
+  };
 
   function seePersonality() {
     let personalityTraits = "";
@@ -74,18 +89,42 @@ function App() {
         personalityTraits += "P";
       }
 
-      personalityTraits += "-";
-
       if(sumTurbulent > sumAssertive){
-        personalityTraits += "T";
+        personalityTraits += "-T";
       } else if(sumAssertive > sumTurbulent){
-        personalityTraits += "A";
+        personalityTraits += "-A";
       }
 
       setPersonalityResults(personalityTraits);
     }
 
     setNotClicked(false);
+  };
+
+  const calculatePercentages = () => {
+    let totalLength = 13; 
+  
+    let introvert_percent = Math.round(introvert.filter(value => value !== 0).length / totalLength * 100);
+    let extrovert_percent = Math.round(extrovert.filter(value => value !== 0).length / totalLength * 100);
+    let sensing_percent = Math.round(sensing.filter(value => value !== 0).length / totalLength * 100);
+    let intuition_percent = Math.round(inutition.filter(value => value !== 0).length / totalLength * 100);
+    let thinking_percent = Math.round(thinking.filter(value => value !== 0).length / totalLength * 100);
+    let feeling_percent = Math.round(feeling.filter(value => value !== 0).length / totalLength * 100);
+    let judging_percent = Math.round(judging.filter(value => value !== 0).length / totalLength * 100);
+    let perceiving_percent = Math.round(perceiving.filter(value => value !== 0).length / totalLength * 100);
+    let turbulent_percent = Math.round(turbulent.filter(value => value !== 0).length / totalLength * 100);
+    let assertive_percent = Math.round(assertive.filter(value => value !== 0).length / totalLength * 100);
+
+    setIntrovertPercentage(introvert_percent);
+    setExtrovertPercentage(extrovert_percent);
+    setSensingPercentage(sensing_percent);
+    setIntuitionPercentage(intuition_percent);
+    setThinkingPercentage(thinking_percent);
+    setFeelingPercentage(feeling_percent);
+    setJudgingPercentage(judging_percent);
+    setPerceivingPercentage(perceiving_percent);
+    setTurbulentPercentage(turbulent_percent);
+    setAssertivePercentage(assertive_percent);
   };
 
   const setIntrovertOrExtrovert = (index, value) => {
@@ -188,7 +227,7 @@ function App() {
             <br />
             Scroll down to get started!<br />
           </p>
-          <p>___________________________________________________________________</p>
+          <p>_________________________________________________________</p>
         </div>
 
         <div className="slider">
@@ -408,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prioritize people's feelings over facts when determining a course of action.</p>
+        <p>You prioritize people's feelings over objective facts when determining a course of action.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1362,14 +1401,41 @@ function App() {
         </div>
 
         <div>
-          <button className="submitButton" onClick={seePersonality}>See my results</button>
+          <button className="submitButton" onClick={handleClick}>See my results</button>
         </div>
 
         {!notClicked ? (
-          <div>
+          <div className='personality-result'>
             <p>
               You are <br /> {personalityResults}
             </p>
+
+            <div className='parent-container'>
+              <p className='trait-title'>{introvertPercentage > extrovertPercentage ? "Introvert (I)" : "Extrovert (E)"}</p>
+              <div class="container">
+                <div class="skills i/e" style={{ width: `${introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%`, backgroundColor: '#ffd11a' }}>{introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%</div>
+              </div>
+
+              <p className='trait-title'>{sensingPercentage > intuitionPercentage ? "Sensing (S)" : "Intuition (N) "}</p>
+              <div class="container">
+                <div class="skills s/i" style={{ width: `${sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%`, backgroundColor: '#ffcc00' }}>{sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%</div>
+              </div>
+
+              <p className='trait-title'>{thinkingPercentage > feelingPercentage ? "Thinking (T)" : "Feeling (F)"}</p>
+              <div class="container">
+                <div class="skills t/f" style={{ width: `${thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%`, backgroundColor: '#e6b800' }}>{thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%</div>
+              </div>
+
+              <p className='trait-title'>{judgingPercentage > perceivingPercentage ? "Judging (J)" : "Perceiving (P)"}</p>
+              <div class="container">
+                <div class="skills j/p" style={{ width: `${judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%`, backgroundColor: '#cca300' }}>{judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%</div>
+              </div>
+
+              <p className='trait-title'>{turbulentPercentage > assertivePercentage ? "Turbulent (-T)" : "Assertive (-A)"}</p>
+              <div class="container">
+                <div class="skills t/a" style={{ width: `${turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%`, backgroundColor: '#b38f00' }}>{turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%</div>
+              </div>
+            </div>
           </div>
         ) : null }
 
