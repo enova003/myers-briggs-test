@@ -267,7 +267,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You usually feel more persuaded by what resonates emotionally with you than by objective facts.</p>
+        <p>When faced with a problem, it's hard for you to detach emotionally and analyze it objectively.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -393,7 +393,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You rarely doubt your abilities or knowledge, even when you make a mistake.</p>
+        <p>You never doubt your abilities or knowledge, even when you make a mistake.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -411,7 +411,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You feel comfortable just walking up to someone you find interesting and striking up a conversation.</p>
+        <p>You are comfortable just walking up to someone you find interesting and striking up a conversation.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -447,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You tend to base decisions off your personal beliefs and values over the objective pros and cons.</p>
+        <p>You base decisions off your personal beliefs and values over the objective pros and cons.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -483,7 +483,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You rarely worry about the impression you make on the people you meet.</p>
+        <p>You don't worry about the impression you make on the people you meet.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -519,7 +519,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy debating ethical dilemmas.</p>
+        <p>You enjoy debating political or ethical dilemmas.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -555,7 +555,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You would prefer to learn something new over spending time outdoors.</p>
+        <p>You prefer to learn something new over spending time outdoors.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -573,7 +573,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You feel comfortable voicing your opinions, even if others might disagree or get upset.</p>
+        <p>You are comfortable voicing your opinions, even if others might disagree or get upset.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -609,7 +609,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You tend to see patterns and connections between seemingly unrelated things.</p> 
+        <p>You see patterns and connections between seemingly unrelated things.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -627,7 +627,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You sometimes hold grudges and have a difficult time forgiving people.</p> 
+        <p>You hold grudges and have a difficult time forgiving people.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -645,7 +645,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You often come up with creative ways to problem solve or accomplish tasks.</p> 
+        <p>You find yourself day-dreaming often.</p> 
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -663,7 +663,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You don't often worry or stress out about the little things.</p>
+        <p>You don't worry or stress out about the little things.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -771,7 +771,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy introducing yourself to new people at social gatherings.</p>
+        <p>You often introduce yourself to new people at social gatherings.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -825,7 +825,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You rarely feel as though you need alone-time.</p>
+        <p>You rarely feel as though you need time alone.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -843,7 +843,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>When recalling a memory, you tend to focus on the general impression rather than the specific details.</p>
+        <p>When recalling a memory, you tend to focus on the overall picture rather than the specific, small details.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -879,7 +879,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You rarely second-guess the past choices that you have made.</p>
+        <p>You don't second-guess the past choices that you have made.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -915,7 +915,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer to save money over spending it on the things you want.</p>
+        <p>You save money long-term over purchasing items you want here and now.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1023,7 +1023,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You don't ever get nervous or anxious to talk on the phone with strangers.</p>
+        <p>You avoid making phone calls.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1077,7 +1077,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You are more likely to finish one task before starting another.</p>
+        <p>You are like to finish one task before starting another.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1113,7 +1113,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>After dreaming, you usually focus on the underlying meaning of your dream over what you visually saw.</p>
+        <p>After dreaming, you focus on the underlying meaning of your dream over what you visually saw.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1149,7 +1149,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You would prefer to watch a movie that resonates with you emotionally over a movie that makes you think.</p>
+        <p>You prefer to watch a movie that resonates with you emotionally over a movie that makes you think.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1221,7 +1221,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You find it interesting to ponder philosophical questions.</p>
+        <p>It is more interesting to discuss hypothetical scenarios and theories over real experiences and events.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1239,7 +1239,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You feel more drawn to busy, bustling atmospheres than to quiet, intimate places.</p>
+        <p>You are more drawn to busy, bustling atmospheres than to quiet, intimate places.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1275,7 +1275,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You tend to complete things in order without skipping over any steps.</p>
+        <p>You complete things in order without skipping over any steps.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1347,7 +1347,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>When traveling, you prefer to have a detailed planned itinerary with each day mapped out in advance.</p>
+        <p>When traveling, you make a detailed planned itinerary with each day mapped out in advance.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
