@@ -447,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You base decisions off your personal beliefs and values over the objective pros and cons.</p>
+        <p>You base decisions off your personal beliefs and values rather than objective pros and cons.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -519,7 +519,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy debating political or ethical dilemmas.</p>
+        <p>You prefer hobbies that involve creativity or strategy over hands-on hobbies, such as gardening, craftsmanship, or cooking.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -861,7 +861,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You feel uneasy when plans change unexpectedly.</p>
+        <p>You feel uneasy when plans change unexpectedly and you try to make a new plan as soon as possible.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -915,7 +915,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You save money long-term over purchasing items you want here and now.</p>
+        <p>You save money long-term over purchasing items that you want.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1077,7 +1077,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You are like to finish one task before starting another.</p>
+        <p>You usually completely finish one task before starting on another.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
