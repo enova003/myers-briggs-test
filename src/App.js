@@ -215,13 +215,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p>
-          Myers Briggs Personality Test
+          Myers-Briggs Type Indicator Personality Test
         </p>
       </header>
       <main>
         <div className='openingParagraph'>
           <p>
-            Welcome to the free Myers Briggs Personality Test <br /><br /> Discover your personality across five categories:
+            Welcome to the free Myers-Briggs Type Indicator (MBTI) Personality Test <br /><br /> Discover your personality across five categories:
             <br /> Introvert vs. Extrovert &#x2219; Sensing vs. Intuition &#x2219; Thinking vs. Feeling &#x2219; Judging vs. Perceiving &#x2219; Turbulent vs. Assertive
             <br /> 
             <br />
@@ -519,7 +519,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer hobbies that involve creativity or strategy over hands-on hobbies, such as gardening, craftsmanship, or cooking.</p>
+        <p>You prefer creative, explorative, or educational hobbies over hands-on hobbies, such as gardening, sports, or cooking.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
