@@ -267,7 +267,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You usually feel more persuaded by what resonates emotionally with you than by factual arguments.</p>
+        <p>You usually feel more persuaded by what resonates emotionally with you than by objective facts.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -375,7 +375,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You like to use organizing tools like schedules and lists.</p>
+        <p>You don't enjoy juggling multiple tasks at once.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -429,7 +429,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy discussing various interpretations of creative works.</p>
+        <p>You enjoy trying to discover the hidden meanings behind creative works.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -447,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prioritize people's feelings over objective facts when determining a course of action.</p>
+        <p>You tend to base decisions off your personal beliefs and values over the objective pros and cons.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -555,7 +555,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You actively seek out new knowledge areas to explore.</p>
+        <p>You would prefer to learn something new over spending time outdoors.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -699,7 +699,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You often become defensive or upset when receiving criticism or negative feedback.</p>
+        <p>You prefer to recieve feedback that acknowledges your efforts over constructive criticism that helps you improve objectively.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -717,7 +717,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer art and theater over math and science.</p>
+        <p>You don't enjoy working with numbers and data.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -753,7 +753,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>In arguments, you make it a point to not purposefully say anything that will hurt the other person.</p>
+        <p>In disagreements, it is important to refrain from saying certain things if it will upset the other person.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -789,7 +789,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You are more likely to prioritize your own happiness over pleasing others.</p>
+        <p>You are more likely to prioritize your own wants over pleasing others.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -807,7 +807,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You don't usually procrastinate or postpone things.</p>
+        <p>You enjoy arriving early to appointments, and you are never usually late for anything.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -825,7 +825,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You usually prefer to be around others rather than on your own.</p>
+        <p>You rarely feel as though you need alone-time.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -843,7 +843,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>When recalling a memory, you often remember the overall theme or impression over the specific details and events.</p>
+        <p>When recalling a memory, you tend to focus on the general impression rather than the specific details.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -951,7 +951,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You are drawn to the underlying meaning of various pieces of creative expression.</p>
+        <p>You often find yourself focusing more on the future than the present.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -969,7 +969,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You usually base your choices on emotional impressions rather than objective facts.</p>
+        <p>When giving advice, you are more inclined to provide emotional support over practical solutions.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -987,7 +987,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You like to have a to-do list for each day.</p>
+        <p>When learning a new skill, you prefer structured approachs with clear steps over experimenting and learning by trial and error.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1041,7 +1041,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy exploring unfamiliar ideas and viewpoints.</p>
+        <p>You enjoy exploring new viewpoints, even if they conflict with your own.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1077,7 +1077,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>If your plans are interrupted, your top priority is to get back on track as soon as possible.</p>
+        <p>You are more likely to finish one task before starting another.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1095,7 +1095,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>Your past mistakes don't usually cause you distress.</p>
+        <p>Your handle stressful situations very well.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1149,7 +1149,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>When making decisions, you focus more on how the affected people might feel than on what is most logical or efficient.</p>
+        <p>You would prefer to watch a movie that resonates with you emotionally over a movie that makes you think.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1293,7 +1293,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer tasks that require you to come up with creative solutions rather than follow concrete steps.</p>
+        <p>You prefer tasks that require you to come up with creative solutions rather than follow a predefined series of steps.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1347,7 +1347,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You don't usually struggle with deadlines.</p>
+        <p>When traveling, you prefer to have a detailed planned itinerary with each day mapped out in advance.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1365,7 +1365,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You tend to base your decisions on how they align with your personal values and beliefs.</p>
+        <p>You typically express appreciation by expressing gratitude for their kindness over recognizing their achievements.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
