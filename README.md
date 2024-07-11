@@ -1,6 +1,6 @@
 # About 
 
-This repository hosts the code for a web application implementing the Myers-Briggs Type Indicator (MBTI) personality test. Inspired by the 16personalities model, this application aims to enhance test accuracy and reliability.
+Built with React.js, this repository hosts the code for a web application implementing the Myers-Briggs Type Indicator (MBTI) personality test. Inspired by the 16personalities model, this application aims to enhance test accuracy and reliability.
 
 # Requirments
 
