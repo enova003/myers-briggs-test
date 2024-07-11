@@ -102,18 +102,18 @@ function App() {
   };
 
   const calculatePercentages = () => {
-    let totalLength = 13; 
+    let totalLength = tempIntrovertExtrovert.length; 
   
-    let introvert_percent = Math.round(introvert.filter(value => value !== 0).length / totalLength * 100);
-    let extrovert_percent = Math.round(extrovert.filter(value => value !== 0).length / totalLength * 100);
-    let sensing_percent = Math.round(sensing.filter(value => value !== 0).length / totalLength * 100);
-    let intuition_percent = Math.round(inutition.filter(value => value !== 0).length / totalLength * 100);
-    let thinking_percent = Math.round(thinking.filter(value => value !== 0).length / totalLength * 100);
-    let feeling_percent = Math.round(feeling.filter(value => value !== 0).length / totalLength * 100);
-    let judging_percent = Math.round(judging.filter(value => value !== 0).length / totalLength * 100);
-    let perceiving_percent = Math.round(perceiving.filter(value => value !== 0).length / totalLength * 100);
-    let turbulent_percent = Math.round(turbulent.filter(value => value !== 0).length / totalLength * 100);
-    let assertive_percent = Math.round(assertive.filter(value => value !== 0).length / totalLength * 100);
+    let introvert_percent = Math.round((introvert.filter(value => value !== 0).length / totalLength) * 100);
+    let extrovert_percent = Math.round((extrovert.filter(value => value !== 0).length / totalLength) * 100);
+    let sensing_percent = Math.round((sensing.filter(value => value !== 0).length / totalLength) * 100);
+    let intuition_percent = Math.round((inutition.filter(value => value !== 0).length / totalLength) * 100);
+    let thinking_percent = Math.round((thinking.filter(value => value !== 0).length / totalLength) * 100);
+    let feeling_percent = Math.round((feeling.filter(value => value !== 0).length / totalLength) * 100);
+    let judging_percent = Math.round((judging.filter(value => value !== 0).length / totalLength) * 100);
+    let perceiving_percent = Math.round((perceiving.filter(value => value !== 0).length / totalLength) * 100);
+    let turbulent_percent = Math.round((turbulent.filter(value => value !== 0).length / totalLength) * 100);
+    let assertive_percent = Math.round((assertive.filter(value => value !== 0).length / totalLength) * 100);
 
     setIntrovertPercentage(introvert_percent);
     setExtrovertPercentage(extrovert_percent);
@@ -225,9 +225,9 @@ function App() {
             <br /> Introvert vs. Extrovert &#x2219; Sensing vs. Intuition &#x2219; Thinking vs. Feeling &#x2219; Judging vs. Perceiving &#x2219; Turbulent vs. Assertive
             <br /> 
             <br />
-            Scroll down to get started!<br />
+            Scroll down to get started!
           </p>
-          <p>_________________________________________________________</p>
+          <hr style={{ width: '50%', color: 'whitesmoke', marginTop: '50px' }} />
         </div>
 
         <div className="slider">
@@ -447,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You base decisions off your personal beliefs and values rather than objective pros and cons.</p>
+        <p>If a decision feels right to you, you often act on it without needing further proof.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -465,7 +465,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You enjoy having your days are structued and following a schedule.</p>
+        <p>You like to have a to-do list for each day.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -519,7 +519,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer creative, explorative, or educational hobbies over hands-on hobbies, such as gardening, sports, or cooking.</p>
+        <p>You prefer creative, strategic, or educational hobbies over hands-on hobbies, such as camping, sports, or cooking.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -753,7 +753,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>In disagreements, it is important to refrain from saying certain things if it will upset the other person.</p>
+        <p>In disagreements, you prioritize the other person's feelings over proving your point.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -879,7 +879,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You don't second-guess the past choices that you have made.</p>
+        <p>You rarely think about your past mistakes.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1023,7 +1023,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You avoid making phone calls.</p>
+        <p>You don't shy away from making phone calls.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1149,7 +1149,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You prefer to watch a movie that resonates with you emotionally over a movie that makes you think.</p>
+        <p>When facts and feelings conflict, you usually find yourself following your heart.</p>
           <Slider 
             sx={{ width: 550 }}
             min={-10}
@@ -1413,27 +1413,27 @@ function App() {
             <div className='parent-container'>
               <p className='trait-title'>{introvertPercentage > extrovertPercentage ? "Introvert (I)" : "Extrovert (E)"}</p>
               <div class="container">
-                <div class="skills i/e" style={{ width: `${introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%`, backgroundColor: '#ffd11a' }}>{introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%</div>
+                <div class="skills i/e" style={{ width: `${introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%`, backgroundColor: '#ffbf00' }}>{introvertPercentage > extrovertPercentage ? introvertPercentage : extrovertPercentage}%</div>
               </div>
 
               <p className='trait-title'>{sensingPercentage > intuitionPercentage ? "Sensing (S)" : "Intuition (N) "}</p>
               <div class="container">
-                <div class="skills s/i" style={{ width: `${sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%`, backgroundColor: '#ffcc00' }}>{sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%</div>
+                <div class="skills s/i" style={{ width: `${sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%`, backgroundColor: '#ff1a1a' }}>{sensingPercentage > intuitionPercentage ? sensingPercentage : intuitionPercentage}%</div>
               </div>
 
               <p className='trait-title'>{thinkingPercentage > feelingPercentage ? "Thinking (T)" : "Feeling (F)"}</p>
               <div class="container">
-                <div class="skills t/f" style={{ width: `${thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%`, backgroundColor: '#e6b800' }}>{thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%</div>
+                <div class="skills t/f" style={{ width: `${thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%`, backgroundColor: '#0099ff' }}>{thinkingPercentage > feelingPercentage ? thinkingPercentage : feelingPercentage}%</div>
               </div>
 
               <p className='trait-title'>{judgingPercentage > perceivingPercentage ? "Judging (J)" : "Perceiving (P)"}</p>
               <div class="container">
-                <div class="skills j/p" style={{ width: `${judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%`, backgroundColor: '#cca300' }}>{judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%</div>
+                <div class="skills j/p" style={{ width: `${judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%`, backgroundColor: '#00ff00' }}>{judgingPercentage > perceivingPercentage ? judgingPercentage : perceivingPercentage}%</div>
               </div>
 
               <p className='trait-title'>{turbulentPercentage > assertivePercentage ? "Turbulent (-T)" : "Assertive (-A)"}</p>
               <div class="container">
-                <div class="skills t/a" style={{ width: `${turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%`, backgroundColor: '#b38f00' }}>{turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%</div>
+                <div class="skills t/a" style={{ width: `${turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%`, backgroundColor: '#8000ff' }}>{turbulentPercentage > assertivePercentage ? turbulentPercentage : assertivePercentage}%</div>
               </div>
             </div>
           </div>
