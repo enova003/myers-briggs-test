@@ -65,7 +65,7 @@ body {
   text-align: center;
 }
 
-/*.agree {
+/* .agree {
     margin-top: 35px;
     position: absolute;
     right: 5%;
@@ -85,11 +85,11 @@ body {
 } */
 
 .agree {
-  left: 52%;
+  left: 54%;
 }
 
 .neutral {
-  left: 2%;
+  left: 2.5%;
 }
 
 .disagree {
@@ -110,7 +110,8 @@ body {
 }
 
 .container {
-  width: 50%;
+  max-width: 1000px;
+  width: 90%;
   background-color: #ddd;
   display: flex;
 }
