@@ -2,26 +2,28 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+  background-color: rgb(31, 27, 27);
+  padding-bottom: 70px;
+  color: whitesmoke;
+  margin: 0;
+}
+
 .App {
   text-align: center;
   font-size: calc(10px + 2vmin);
   color: whitesmoke;
+  padding-bottom: 70px;
 }
 
 .App-header {
   background-color: rgb(13, 13, 14);
   min-height: 10vh;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
   color: whitesmoke;
-}
-
-body {
-  background-color: rgb(31, 27, 27);
-  padding-bottom: 70px;
 }
 
 .slider {
@@ -32,15 +34,17 @@ body {
   padding: 1px;
   justify-content: center;
   text-align: center;
-  width: 700px; 
-  height: 200px;
+  width: 97%;           /* 3% left and right margin on smaller devices */
+  max-width: 700px; 
+  height: 100%;
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .submitButton {
   margin-bottom: 75px;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   height: 50px;
   color: black;
   background-color: grey;
@@ -61,10 +65,10 @@ body {
   text-align: center;
 }
 
-.agree {
-  margin-top: 35px;
-  position: absolute;
-  right: 5%;
+/*.agree {
+    margin-top: 35px;
+    position: absolute;
+    right: 5%;
 }
 
 .neutral {
@@ -78,6 +82,25 @@ body {
   margin-top: 35px;
   position: absolute;
   left: 5%;
+} */
+
+.agree {
+  left: 52%;
+}
+
+.neutral {
+  left: 2%;
+}
+
+.disagree {
+  right: 50%;
+}
+
+.agree, .neutral, .disagree {
+  margin-top: 30px; 
+  position: relative; 
+  width: 33.33%; 
+  text-align: center;
 }
 
 .parent-container {

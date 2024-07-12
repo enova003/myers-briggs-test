@@ -233,7 +233,7 @@ function App() {
         <div className="slider">
         <p>You regularly make new friends.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -251,7 +251,7 @@ function App() {
         <div className="slider">
         <p>Complex ideas excite you more than simple and straightforward ones.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -269,7 +269,7 @@ function App() {
         <div className="slider">
         <p>When faced with a problem, it's hard for you to detach emotionally and analyze it objectively.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -287,7 +287,7 @@ function App() {
         <div className="slider">
         <p>Your living and working spaces are clean and organized.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -305,7 +305,7 @@ function App() {
         <div className="slider">
         <p>You usually stay calm, even under a lot of pressure.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -323,7 +323,7 @@ function App() {
         <div className="slider">
         <p>You feel comfortable with the idea of networking or promoting yourself to strangers.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -341,7 +341,7 @@ function App() {
         <div className="slider">
         <p>You prioritize and plan tasks effectively, often completing them well before the deadline.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -359,7 +359,7 @@ function App() {
         <div className="slider">
         <p>People's stories and emotions speak louder to you than numbers or data.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -377,7 +377,7 @@ function App() {
         <div className="slider">
         <p>You don't enjoy juggling multiple tasks at once.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -395,7 +395,7 @@ function App() {
         <div className="slider">
         <p>You never doubt your abilities or knowledge, even when you make a mistake.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -413,7 +413,7 @@ function App() {
         <div className="slider">
         <p>You are comfortable just walking up to someone you find interesting and striking up a conversation.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -431,7 +431,7 @@ function App() {
         <div className="slider">
         <p>You enjoy trying to discover the hidden meanings behind creative works.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -449,7 +449,7 @@ function App() {
         <div className="slider">
         <p>If a decision feels right to you, you often act on it without needing further proof.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -467,7 +467,7 @@ function App() {
         <div className="slider">
         <p>You like to have a to-do list for each day.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -485,7 +485,7 @@ function App() {
         <div className="slider">
         <p>You don't worry about the impression you make on the people you meet.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -503,7 +503,7 @@ function App() {
         <div className="slider">
         <p>You enjoy participating in team-based activities.</p>  
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -521,7 +521,7 @@ function App() {
         <div className="slider">
         <p>You prefer creative, strategic, or educational hobbies over hands-on hobbies, such as camping, sports, or cooking.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -539,7 +539,7 @@ function App() {
         <div className="slider">
         <p>You prioritize being sensitive over being completely honest.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -557,7 +557,7 @@ function App() {
         <div className="slider">
         <p>You prefer to learn something new over spending time outdoors.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -575,7 +575,7 @@ function App() {
         <div className="slider">
         <p>You are comfortable voicing your opinions, even if others might disagree or get upset.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -593,7 +593,7 @@ function App() {
         <div className="slider">
         <p>You would rather attend a lively event on a Friday night than stay at home.</p>  
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -611,7 +611,7 @@ function App() {
         <div className="slider">
         <p>You see patterns and connections between seemingly unrelated things.</p> 
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -629,7 +629,7 @@ function App() {
         <div className="slider">
         <p>You hold grudges and have a difficult time forgiving people.</p> 
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -647,7 +647,7 @@ function App() {
         <div className="slider">
         <p>You find yourself day-dreaming often.</p> 
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -665,7 +665,7 @@ function App() {
         <div className="slider">
         <p>You don't worry or stress out about the little things.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -683,7 +683,7 @@ function App() {
         <div className="slider">
         <p>You enjoy group hobbies or activities more than solitary ones.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -701,7 +701,7 @@ function App() {
         <div className="slider">
         <p>You prefer to recieve feedback that acknowledges your efforts over constructive criticism that helps you improve objectively.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -719,7 +719,7 @@ function App() {
         <div className="slider">
         <p>You don't enjoy working with numbers and data.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -737,7 +737,7 @@ function App() {
         <div className="slider">
         <p>You prefer to do your chores before allowing yourself to relax.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -755,7 +755,7 @@ function App() {
         <div className="slider">
         <p>In disagreements, you prioritize the other person's feelings over proving your point.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -773,7 +773,7 @@ function App() {
         <div className="slider">
         <p>You often introduce yourself to new people at social gatherings.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -791,7 +791,7 @@ function App() {
         <div className="slider">
         <p>You are more likely to prioritize your own wants over pleasing others.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -809,7 +809,7 @@ function App() {
         <div className="slider">
         <p>You enjoy arriving early to appointments, and you are never usually late for anything.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -827,7 +827,7 @@ function App() {
         <div className="slider">
         <p>You rarely feel as though you need time alone.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -845,7 +845,7 @@ function App() {
         <div className="slider">
         <p>When recalling a memory, you tend to focus on the overall picture rather than the specific, small details.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -863,7 +863,7 @@ function App() {
         <div className="slider">
         <p>You feel uneasy when plans change unexpectedly and you try to make a new plan as soon as possible.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -881,7 +881,7 @@ function App() {
         <div className="slider">
         <p>You rarely think about your past mistakes.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -899,7 +899,7 @@ function App() {
         <div className="slider">
         <p>You are very curious about what happens after death.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -917,7 +917,7 @@ function App() {
         <div className="slider">
         <p>You save money long-term over purchasing items that you want.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -935,7 +935,7 @@ function App() {
         <div className="slider">
         <p>You are decisive and don't often need reassurance from others when making decisions.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -953,7 +953,7 @@ function App() {
         <div className="slider">
         <p>You often find yourself focusing more on the future than the present.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -971,7 +971,7 @@ function App() {
         <div className="slider">
         <p>When giving advice, you are more inclined to provide emotional support over practical solutions.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -989,7 +989,7 @@ function App() {
         <div className="slider">
         <p>When learning a new skill, you prefer structured approachs with clear steps over experimenting and learning by trial and error.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1007,7 +1007,7 @@ function App() {
         <div className="slider">
         <p>You rarely feel insecure.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1025,7 +1025,7 @@ function App() {
         <div className="slider">
         <p>You don't shy away from making phone calls.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1043,7 +1043,7 @@ function App() {
         <div className="slider">
         <p>You enjoy exploring new viewpoints, even if they conflict with your own.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1061,7 +1061,7 @@ function App() {
         <div className="slider">
         <p>You easily open up to new people.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1079,7 +1079,7 @@ function App() {
         <div className="slider">
         <p>You usually completely finish one task before starting on another.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1097,7 +1097,7 @@ function App() {
         <div className="slider">
         <p>Your handle stressful situations very well.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1115,7 +1115,7 @@ function App() {
         <div className="slider">
         <p>After dreaming, you focus on the underlying meaning of your dream over what you visually saw.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1133,7 +1133,7 @@ function App() {
         <div className="slider">
         <p>Your emotions tend to control you more than you control them.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1151,7 +1151,7 @@ function App() {
         <div className="slider">
         <p>When facts and feelings conflict, you usually find yourself following your heart.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1169,7 +1169,7 @@ function App() {
         <div className="slider">
         <p>Your personal work style is closer to organized and consistent efforts than spontaneous bursts of energy.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1187,7 +1187,7 @@ function App() {
         <div className="slider">
         <p>You are confident in yourself and don't worry about letting others down.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1205,7 +1205,7 @@ function App() {
         <div className="slider">
         <p>You would hate a job that requires you to work alone most of the time.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1223,7 +1223,7 @@ function App() {
         <div className="slider">
         <p>It is more interesting to discuss hypothetical scenarios and theories over real experiences and events.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1241,7 +1241,7 @@ function App() {
         <div className="slider">
         <p>You are more drawn to busy, bustling atmospheres than to quiet, intimate places.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1259,7 +1259,7 @@ function App() {
         <div className="slider">
         <p>You rarely feel overwhelmed.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1277,7 +1277,7 @@ function App() {
         <div className="slider">
         <p>You complete things in order without skipping over any steps.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1295,7 +1295,7 @@ function App() {
         <div className="slider">
         <p>You prefer tasks that require you to come up with creative solutions rather than follow a predefined series of steps.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1313,7 +1313,7 @@ function App() {
         <div className="slider">
         <p>You enjoy seeing people you work with out in public.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1331,7 +1331,7 @@ function App() {
         <div className="slider">
         <p>You find it easy to comfort someone who is crying.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1349,7 +1349,7 @@ function App() {
         <div className="slider">
         <p>When traveling, you make a detailed planned itinerary with each day mapped out in advance.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1367,7 +1367,7 @@ function App() {
         <div className="slider">
         <p>You typically express appreciation by expressing gratitude for their kindness over recognizing their achievements.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
@@ -1385,7 +1385,7 @@ function App() {
         <div className="slider">
         <p>You feel confident that things will work out for you.</p>
           <Slider 
-            sx={{ width: 550 }}
+            sx={{ width: '80%' }}
             min={-10}
             max={10}
             defaultValue={0}
