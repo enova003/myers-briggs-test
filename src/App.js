@@ -239,7 +239,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[0]}
             onChange={(event, value) => setIntrovertOrExtrovert(0, value)}
           />
@@ -257,7 +257,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[0]}
             onChange={(event, value) => setSensingOrIntuition(0, value)}
           />
@@ -267,7 +267,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>When faced with a problem, it's hard for you to detach emotionally and analyze it objectively.</p>
+        <p>You usually feel more persuaded by what resonates emotionally with you than by factual arguments.</p>
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -275,7 +275,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[0]}
             onChange={(event, value) => setThinkingOrFeeling(0, value)}
           />
@@ -293,7 +293,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[0]}
             onChange={(event, value) => setJudgingOrPerceiving(0, value)}
           />
@@ -311,7 +311,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[0]}
             onChange={(event, value) => setAssertiveOrTurbulent(0, value)}
           />
@@ -329,7 +329,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[1]}
             onChange={(event, value) => setIntrovertOrExtrovert(1, value)}
           />
@@ -347,7 +347,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[1]}
             onChange={(event, value) => setJudgingOrPerceiving(1, value)}
           />
@@ -365,7 +365,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[1]}
             onChange={(event, value) => setThinkingOrFeeling(1, value)}
           />
@@ -383,7 +383,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[2]}
             onChange={(event, value) => setJudgingOrPerceiving(2, value)}
           />
@@ -401,7 +401,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[1]}
             onChange={(event, value) => setAssertiveOrTurbulent(1, value)}
           />
@@ -419,7 +419,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[2]}
             onChange={(event, value) => setIntrovertOrExtrovert(2, value)}
           />
@@ -437,7 +437,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[1]}
             onChange={(event, value) => setSensingOrIntuition(1, value)}
           />
@@ -447,7 +447,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>If a decision feels right to you, you often act on it without needing further proof.</p>
+        <p>You prioritize people's feelings over facts when determining a course of action.</p>
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -455,7 +455,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[2]}
             onChange={(event, value) => setThinkingOrFeeling(2, value)}
           />
@@ -473,7 +473,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[3]}
             onChange={(event, value) => setJudgingOrPerceiving(3, value)}
           />
@@ -491,7 +491,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[2]}
             onChange={(event, value) => setAssertiveOrTurbulent(2, value)}
           />
@@ -509,7 +509,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[3]}
             onChange={(event, value) => setIntrovertOrExtrovert(3, value)}
           />
@@ -527,7 +527,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[2]}
             onChange={(event, value) => setSensingOrIntuition(2, value)}
           />
@@ -545,7 +545,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[3]}
             onChange={(event, value) => setThinkingOrFeeling(3, value)}
           />
@@ -563,7 +563,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[3]}
             onChange={(event, value) => setSensingOrIntuition(3, value)}
           />
@@ -581,7 +581,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[3]}
             onChange={(event, value) => setAssertiveOrTurbulent(3, value)}
           />
@@ -599,7 +599,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[4]}
             onChange={(event, value) => setIntrovertOrExtrovert(4, value)}
           />
@@ -617,7 +617,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[4]}
             onChange={(event, value) => setSensingOrIntuition(4, value)}
           />
@@ -627,7 +627,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You hold grudges and have a difficult time forgiving people.</p> 
+        <p>You prioritize emotional considerations in decisions, even if it means sacrificing some efficiency.</p> 
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -635,7 +635,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[4]}
             onChange={(event, value) => setThinkingOrFeeling(4, value)}
           />
@@ -653,7 +653,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[5]}
             onChange={(event, value) => setSensingOrIntuition(5, value)}
           />
@@ -671,7 +671,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[4]}
             onChange={(event, value) => setAssertiveOrTurbulent(4, value)}
           />
@@ -689,7 +689,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[5]}
             onChange={(event, value) => setIntrovertOrExtrovert(5, value)}
           />
@@ -707,7 +707,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[5]}
             onChange={(event, value) => setThinkingOrFeeling(5, value)}
           />
@@ -725,7 +725,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[6]}
             onChange={(event, value) => setThinkingOrFeeling(6, value)}
           />
@@ -743,7 +743,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[4]}
             onChange={(event, value) => setJudgingOrPerceiving(4, value)}
           />
@@ -753,7 +753,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>In disagreements, you prioritize the other person's feelings over proving your point.</p>
+        <p>In disagreements, you prioritize preserving the feelings of others over proving your point.</p>
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -761,7 +761,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[7]}
             onChange={(event, value) => setThinkingOrFeeling(7, value)}
           />
@@ -779,7 +779,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[6]}
             onChange={(event, value) => setIntrovertOrExtrovert(6, value)}
           />
@@ -797,7 +797,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[5]}
             onChange={(event, value) => setAssertiveOrTurbulent(5, value)}
           />
@@ -815,7 +815,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[5]}
             onChange={(event, value) => setJudgingOrPerceiving(5, value)}
           />
@@ -833,7 +833,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[7]}
             onChange={(event, value) => setIntrovertOrExtrovert(7, value)}
           />
@@ -851,7 +851,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[6]}
             onChange={(event, value) => setSensingOrIntuition(6, value)}
           />
@@ -869,7 +869,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[6]}
             onChange={(event, value) => setJudgingOrPerceiving(6, value)}
           />
@@ -887,7 +887,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[6]}
             onChange={(event, value) => setAssertiveOrTurbulent(6, value)}
           />
@@ -905,7 +905,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[7]}
             onChange={(event, value) => setSensingOrIntuition(7, value)}
           />
@@ -923,7 +923,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[7]}
             onChange={(event, value) => setJudgingOrPerceiving(7, value)}
           />
@@ -941,7 +941,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[7]}
             onChange={(event, value) => setAssertiveOrTurbulent(7, value)}
           />
@@ -959,7 +959,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[8]}
             onChange={(event, value) => setSensingOrIntuition(8, value)}
           />
@@ -977,7 +977,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[8]}
             onChange={(event, value) => setThinkingOrFeeling(8, value)}
           />
@@ -995,7 +995,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[8]}
             onChange={(event, value) => setJudgingOrPerceiving(8, value)}
           />
@@ -1013,7 +1013,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[8]}
             onChange={(event, value) => setAssertiveOrTurbulent(8, value)}
           />
@@ -1031,7 +1031,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[8]}
             onChange={(event, value) => setIntrovertOrExtrovert(8, value)}
           />
@@ -1049,7 +1049,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[9]}
             onChange={(event, value) => setSensingOrIntuition(9, value)}
           />
@@ -1067,7 +1067,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[9]}
             onChange={(event, value) => setIntrovertOrExtrovert(9, value)}
           />
@@ -1085,7 +1085,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[9]}
             onChange={(event, value) => setJudgingOrPerceiving(9, value)}
           />
@@ -1103,7 +1103,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[9]}
             onChange={(event, value) => setAssertiveOrTurbulent(9, value)}
           />
@@ -1121,7 +1121,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[10]}
             onChange={(event, value) => setSensingOrIntuition(10, value)}
           />
@@ -1139,7 +1139,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[9]}
             onChange={(event, value) => setThinkingOrFeeling(9, value)}
           />
@@ -1157,7 +1157,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[10]}
             onChange={(event, value) => setThinkingOrFeeling(10, value)}
           />
@@ -1175,7 +1175,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[10]}
             onChange={(event, value) => setJudgingOrPerceiving(10, value)}
           />
@@ -1193,7 +1193,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[10]}
             onChange={(event, value) => setAssertiveOrTurbulent(10, value)}
           />
@@ -1211,7 +1211,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[10]}
             onChange={(event, value) => setIntrovertOrExtrovert(10, value)}
           />
@@ -1229,7 +1229,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[11]}
             onChange={(event, value) => setSensingOrIntuition(11, value)}
           />
@@ -1247,7 +1247,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[11]}
             onChange={(event, value) => setIntrovertOrExtrovert(11, value)}
           />
@@ -1265,7 +1265,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[11]}
             onChange={(event, value) => setAssertiveOrTurbulent(11, value)}
           />
@@ -1283,7 +1283,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[11]}
             onChange={(event, value) => setJudgingOrPerceiving(11, value)}
           />
@@ -1301,7 +1301,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempSensingIntuition[12]}
             onChange={(event, value) => setSensingOrIntuition(12, value)}
           />
@@ -1319,7 +1319,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempIntrovertExtrovert[12]}
             onChange={(event, value) => setIntrovertOrExtrovert(12, value)}
           />
@@ -1329,7 +1329,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You find it easy to comfort someone who is crying.</p>
+        <p>When making decisions, you focus more on how the affected people might feel than on what is most logical or efficient.</p>
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -1337,7 +1337,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[11]}
             onChange={(event, value) => setThinkingOrFeeling(11, value)}
           />
@@ -1355,7 +1355,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempJudgingPerceiving[12]}
             onChange={(event, value) => setJudgingOrPerceiving(12, value)}
           />
@@ -1365,7 +1365,7 @@ function App() {
         </div>
 
         <div className="slider">
-        <p>You typically express appreciation by expressing gratitude for their kindness over recognizing their achievements.</p>
+        <p>You are easily swayed by emotional arguments.</p>
           <Slider 
             sx={{ width: '80%' }}
             min={-10}
@@ -1373,7 +1373,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempThinkingFeeling[12]}
             onChange={(event, value) => setThinkingOrFeeling(12, value)}
           />
@@ -1391,7 +1391,7 @@ function App() {
             defaultValue={0}
             step={1}
             color="secondary"
-            marks
+            /* marks */
             value={tempTurbulentAssertive[12]}
             onChange={(event, value) => setAssertiveOrTurbulent(12, value)}
           />
