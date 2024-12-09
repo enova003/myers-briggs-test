@@ -1571,7 +1571,7 @@ function App() {
 
         <div>
           <button className="submitButton" onClick={handleClick}>
-            See My Personality
+            See My Results
           </button>
         </div>
 
