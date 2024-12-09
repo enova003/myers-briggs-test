@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/myers-briggs-test/static/css/main.656c707f.css",
+    "main.css": "/myers-briggs-test/static/css/main.d4bbfe3d.css",
     "main.js": "/myers-briggs-test/static/js/main.686901bb.js",
     "static/js/453.78916448.chunk.js": "/myers-briggs-test/static/js/453.78916448.chunk.js",
     "index.html": "/myers-briggs-test/index.html",
-    "main.656c707f.css.map": "/myers-briggs-test/static/css/main.656c707f.css.map",
+    "main.d4bbfe3d.css.map": "/myers-briggs-test/static/css/main.d4bbfe3d.css.map",
     "main.686901bb.js.map": "/myers-briggs-test/static/js/main.686901bb.js.map",
     "453.78916448.chunk.js.map": "/myers-briggs-test/static/js/453.78916448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.656c707f.css",
+    "static/css/main.d4bbfe3d.css",
     "static/js/main.686901bb.js"
   ]
 }
